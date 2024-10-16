@@ -1,13 +1,10 @@
-import { Text, View } from 'react-native';
-import Button from './src/components/button/button';
+import Login from "./src/screens/login/login.jsx";
+import Account from "./src/screens/account/account.jsx";
 
 function App() {
-  
-  return <>
-      <Text>Exibição Inicial no Expo</Text>
 
-      <Button text="Isso é um teste"/>
-        
+  return <>
+    <Account />
   </>;
 }
 
