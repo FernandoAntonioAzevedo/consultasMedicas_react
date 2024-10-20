@@ -18,7 +18,7 @@ function Appointment(props) {
                     <Image style={styles.icon}
                         source={icon.calendar} />
                     <Text style={styles.bookingDate}>
-                        15/10/2024
+                        21/10/2024
                     </Text>
                 </View>
 
