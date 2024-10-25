@@ -9,13 +9,19 @@ import Button from "../../components/button/button.jsx";
 LocaleConfig.locales["pt-br"] = ptBR;
 LocaleConfig.defaultLocale = "pt-br";
 
-function Schedule() {
+function Schedule(props) {
 
     //Projeto Calendario: https://github.com/wix/react-native-calendars
     //Projeto Picker: https://github.com/react-native-picker/picker
 
+    const id_doctor = props.route.params.id_doctor;
+    const id_service = props.route.params.id_service;
     const [selectedDate, setSelectedDate] = useState("");
     const [selectedHour, setSelectedHour] = useState("");
+
+    function ClickBooking() {
+        console.log(id_doctor, id_service, selectedDate, selectedHour);
+    }
 
     return <View style={styles.container}>
         <View>
@@ -52,7 +58,7 @@ function Schedule() {
         </View>
 
         <View>
-            <Button text="Confirmar Reserva" />
+            <Button text="Confirmar Reserva" onPress={ClickBooking} />
         </View>
 
     </View>
