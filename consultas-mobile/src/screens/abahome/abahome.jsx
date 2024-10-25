@@ -4,10 +4,10 @@ import { doctors } from "../../constants/data.js";
 import Doctor from "../../components/doctor/doctor.jsx";
 
 
-function AbaHome() {
+function AbaHome(props) {
 
     function ClickDoctor(id_doctor, name, specialty, icon) {
-        console.log(id_doctor, name, specialty, icon);
+        props.navigation.navigate("services");
     }
 
     return <View style={styles.container}>

@@ -1,3 +1,4 @@
+import { COLOR, COLORS } from "../constants/theme.js";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Main from "../screens/main/main.jsx";
 import Services from "../screens/services/services.jsx";
@@ -12,7 +13,13 @@ function RoutesPrivate() {
         }} />
 
 <Stack.Screen name="services" component={Services} options={{
-            headerShown: false
+            headerTitle: "Serviços",
+            headerTitleAlign: "center",
+            headerShadowVisible: false,
+            headerTintColor: COLORS.white,
+            headerStyle:{
+                backgroundColor: COLORS.blue
+            }
         }} />
 
 <Stack.Screen name="schedule" component={Schedule} options={{
