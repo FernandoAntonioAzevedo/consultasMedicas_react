@@ -6,6 +6,7 @@ const Stack = createNativeStackNavigator();
 
 function RoutesOpen() {
     return <Stack.Navigator>
+        
         <Stack.Screen name="login" component={Login} 
         options={{
             headerShown: false
@@ -15,6 +16,8 @@ function RoutesOpen() {
         options={{
             headerShown: false
         }} />
+
+       
 
     </Stack.Navigator>
 }
