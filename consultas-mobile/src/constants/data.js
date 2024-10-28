@@ -92,7 +92,7 @@ export const appointments = [
     {
         id_appointment: 5,
         service: "Consulta",
-        doctor: "Dr. Antônio Almeida Souza",
+        doctor: "Dra. Mirella Albuquerque",
         specialty: "Pediatria",
         booking_date: "2024-12-02",
         booking_hour: "10:40",
